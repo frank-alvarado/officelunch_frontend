@@ -3,10 +3,13 @@ from django.conf import settings
 
 import requests
 
+
 from .forms import SubmitEmbed
 from .serializer import EmbedSerializer
 
+
 def save_embed(request):
+
     if request.method == "POST":
         form = SubmitEmbed(request.POST)
         if form.is_valid():

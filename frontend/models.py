@@ -3,7 +3,7 @@ from django.db import models
 class SavedEmbeds(models.Model):
     type = models.CharField(max_length=15)
     provider_url = models.URLField()
-    provide_name = models.CharField(max_length=100)
+    provider_name = models.CharField(max_length=100)
     title = models.CharField(max_length=100)
     description = models.TextField()
     html = models.TextField()
