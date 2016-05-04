@@ -1,0 +1,4 @@
+Django==1.9.6
+django-bootstrap3==7.0.1
+djangorestframework==3.3.3
+requests==2.10.0

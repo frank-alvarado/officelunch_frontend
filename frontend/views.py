@@ -7,7 +7,6 @@ import requests
 from .forms import SubmitEmbed
 from .serializer import EmbedSerializer
 
-
 def save_embed(request):
 
     if request.method == "POST":
@@ -24,3 +23,6 @@ def save_embed(request):
         form = SubmitEmbed()
 
     return render(request, 'index.html', {'form': form})
+
+def index(request):
+    return render(request, 'index.html')
